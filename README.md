@@ -62,12 +62,12 @@ Je suis disponible pour échanger autour du développement, de l'apprentissage e
 ## Statistiques
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=A-ErdemK&show_icons=true&hide_border=true&rank_icon=github&locale=fr&title_color=2F81F7&icon_color=F97316&text_color=7D8590&bg_color=00000000" alt="Statistiques GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-ErdemK&layout=compact&hide_border=true&locale=fr&title_color=2F81F7&text_color=7D8590&bg_color=00000000" alt="Langages les plus utilisés" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=A-ErdemK&show_icons=true&hide_border=true&rank_icon=github&locale=fr&title_color=58A6FF&icon_color=F97316&text_color=C9D1D9&bg_color=0D1117" alt="Statistiques GitHub" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-ErdemK&layout=compact&hide_border=true&locale=fr&title_color=58A6FF&text_color=C9D1D9&bg_color=0D1117" alt="Langages les plus utilisés" />
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=A-ErdemK&locale=fr&hide_border=true&background=00000000&ring=2F81F7&fire=F97316&currStreakLabel=2F81F7" alt="Série de contributions GitHub" />
+  <img src="https://streak-stats.demolab.com?user=A-ErdemK&locale=fr&hide_border=true&background=0D1117&ring=58A6FF&fire=F97316&currStreakLabel=58A6FF&currStreakNum=C9D1D9&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E" alt="Série de contributions GitHub" />
 </p>
 
 ## Activité
