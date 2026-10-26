@@ -75,6 +75,17 @@
 
 <p><img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,docker,githubactions,git,linux" alt="MySQL, PostgreSQL, SQLite, Docker, GitHub Actions, Git, Linux" /></p>
 
+## Statistiques
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/A-ErdemK/A-ErdemK/output/metrics-stats.svg" alt="Statistiques GitHub (repos publics et privés)" />
+  <img src="https://raw.githubusercontent.com/A-ErdemK/A-ErdemK/output/metrics-languages.svg" alt="Langages les plus utilisés" />
+</p>
+
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=A-ErdemK&locale=fr&hide_border=true&background=0D1117&ring=58A6FF&fire=F97316&currStreakLabel=58A6FF&currStreakNum=C9D1D9&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E" alt="Série de contributions GitHub" />
+</p>
+
 ## Activité
 
 <p align="center">
