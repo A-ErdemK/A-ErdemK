@@ -7,7 +7,6 @@ import json
 import os
 import sys
 import urllib.error
-import urllib.parse
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from html import escape
@@ -69,20 +68,36 @@ def compter_commits(repo, login, depuis):
         page += 1
 
 
-def compter_recherche(q):
-    return requete(f"{API}/search/issues?q={urllib.parse.quote(q)}&per_page=1")["total_count"]
+def compter_pr(repos, login, depuis):
+    """Pull requests ouvertes et revues de code, repo par repo (la recherche ne voit pas les repos privés)."""
+    ouvertes = revues = 0
+    for repo in repos:
+        page = 1
+        while True:
+            lot = requete(f"{API}/repos/{repo['full_name']}/pulls?state=all&per_page=100&page={page}")
+            for pr in lot:
+                if pr["created_at"] < depuis:
+                    continue
+                if pr["user"]["login"] == login:
+                    ouvertes += 1
+                elif any(r["user"] and r["user"]["login"] == login for r in requete(f"{pr['url']}/reviews?per_page=100")):
+                    revues += 1
+            if len(lot) < 100:
+                break
+            page += 1
+    return ouvertes, revues
 
 
 def stats(repos):
     data = graphql("{ viewer { login contributionsCollection { contributionCalendar { totalContributions } } } }")["viewer"]
     login = data["login"]
     depuis = (datetime.now(timezone.utc) - timedelta(days=365)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    date = depuis[:10]
+    ouvertes, revues = compter_pr(repos, login, depuis)
     return login, [
         ("Contributions (12 derniers mois)", data["contributionsCollection"]["contributionCalendar"]["totalContributions"]),
         ("Commits (12 derniers mois)", sum(compter_commits(r, login, depuis) for r in repos)),
-        ("Pull requests", compter_recherche(f"type:pr author:{login} created:>={date}")),
-        ("Revues de code", compter_recherche(f"type:pr reviewed-by:{login} -author:{login} created:>={date}")),
+        ("Pull requests", ouvertes),
+        ("Revues de code", revues),
     ]
 
 
