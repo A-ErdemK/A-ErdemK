@@ -117,11 +117,13 @@ def langues(repos):
 
 
 def carte_stats(login, lignes):
+    # Même hauteur que la carte des langages, lignes centrées sous le titre
     hauteur = 165
+    y0 = 70 + (4 - len(lignes)) * 13
     texte = "".join(
-        f'<circle cx="31" cy="{66 + i * 26}" r="4" fill="{ICONE}"/>'
-        f'<text x="45" y="{70 + i * 26}" class="l">{escape(lib)} :</text>'
-        f'<text x="375" y="{70 + i * 26}" class="v">{val}</text>'
+        f'<circle cx="31" cy="{y0 - 4 + i * 26}" r="4" fill="{ICONE}"/>'
+        f'<text x="45" y="{y0 + i * 26}" class="l">{escape(lib)} :</text>'
+        f'<text x="375" y="{y0 + i * 26}" class="v">{val}</text>'
         for i, (lib, val) in enumerate(lignes)
     )
     return f"""<svg xmlns="http://www.w3.org/2000/svg" width="400" height="{hauteur}" viewBox="0 0 400 {hauteur}">
