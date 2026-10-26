@@ -1,74 +1,79 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=3000&pause=900&color=2F81F7&center=true&vCenter=true&width=700&lines=Bonjour%2C+moi+c'est+Erdem+%F0%9F%91%8B;D%C3%A9veloppeur+curieux;J'apprends+en+construisant" alt="Présentation animée d'Erdem" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=25&duration=3000&pause=900&color=2F81F7&center=true&vCenter=true&width=700&lines=Bonjour%2C+moi+c'est+Erdem+%F0%9F%91%8B;%C3%89tudiant+en+BUT+Informatique+(3e+ann%C3%A9e);D%C3%A9veloppement+web+%C2%B7+Automatisation" alt="Présentation animée d'Erdem" />
 </div>
 
 <div align="center">
-  <p><strong>Développeur en formation</strong> · Web · Logiciel · Expérimentation</p>
+  <p><strong>Étudiant en BUT Informatique, 3e année</strong> · IUT d'Orléans</p>
   <p>
-    <a href="https://github.com/A-ErdemK"><img src="https://img.shields.io/badge/GitHub-A--ErdemK-181717?style=for-the-badge&logo=github&logoColor=white" alt="Profil GitHub" /></a>
     <a href="https://www.linkedin.com/in/erdem-kurac-22b245388/"><img src="https://img.shields.io/badge/LinkedIn-Erdem_Kurac-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Profil LinkedIn" /></a>
     <a href="mailto:kuracerdem@gmail.com"><img src="https://img.shields.io/badge/Email-me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Envoyer un e-mail" /></a>
   </p>
-</div>
-
-<br />
-
-<div align="center">
-  <a href="#à-propos">À propos</a> ·
-  <a href="#ce-que-je-construis">Ce que je construis</a> ·
-  <a href="#outils--technologies">Technologies</a> ·
-  <a href="#activité">Activité</a>
 </div>
 
 ---
 
 ## À propos
 
-Je développe par curiosité et pour progresser concrètement. J'aime comprendre comment les choses fonctionnent, transformer une idée en solution et améliorer le résultat étape par étape.
+Étudiant en 3e année de BUT Informatique à l'IUT d'Orléans. Je conçois des applications web complètes, du back-end à l'interface, et j'automatise tout ce qui peut l'être.
 
-- Je construis mon portfolio à travers des projets personnels et des expérimentations.
-- Je privilégie les interfaces claires, le code compréhensible et les solutions utiles.
-- Je reste curieux des nouvelles technologies et des bonnes pratiques du développement.
+- 🏥 **Stage** au Centre Hospitalier de Gien : portail web de gestion des accès techniques (Vue, Flask, LDAP, chiffrement AES, audit).
+- 🧪 **Qualité** : tests automatisés (Pytest, Vitest, xUnit) et intégration continue avec GitHub Actions et Docker.
+- 👥 **Travail en équipe** : branches, pull requests et revues de code sur la plupart de mes projets de groupe.
 
-## Ce que je construis
+## Projets phares
 
 <table>
   <tr>
-    <td width="33%" valign="top"><strong>Interfaces</strong><br /><br />Des expériences web propres, lisibles et agréables à utiliser.</td>
-    <td width="33%" valign="top"><strong>Outils</strong><br /><br />Des scripts et petits projets qui répondent à un besoin concret.</td>
-    <td width="33%" valign="top"><strong>Progression</strong><br /><br />Des réalisations documentées et améliorées à chaque version.</td>
+    <td width="50%" valign="top">
+      <h3>🏥 Portail Infra</h3>
+      <p>Application interne réalisée en stage pour gérer les comptes techniques par service : connexion LDAP avec secours en base locale, rôles, mots de passe chiffrés en AES, journal d'audit complet.</p>
+      <p><code>Vue 3</code> <code>Flask</code> <code>MySQL</code> <code>LDAP</code> <code>JWT</code> <code>Docker</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>♟️ Échecs en réseau chiffré</h3>
+      <p>Jeu d'échecs complet en local et en réseau client-serveur : matchmaking, parties simultanées, échange de clés ECDH et chiffrement AES-GCM. J'ai conçu l'architecture réseau.</p>
+      <p><code>Python</code> <code>Pygame</code> <code>Sockets</code> <code>Cryptographie</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🦖 Le Parc du Jurassique</h3>
+      <p>Application web de gestion (personnel, matériel, campagnes de fouilles, échantillons ADN, budget) réalisée à quatre.</p>
+      <p><code>Flask</code> <code>SQLAlchemy</code> <code>MySQL</code> <code>Pytest</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>⚙️ Chaîne CI/CD</h3>
+      <p>Application de liste de tâches construite, testée, conteneurisée et déployée automatiquement : pipelines GitHub Actions, images Docker, tests d'intégration avec Testcontainers.</p>
+      <p><code>React</code> <code>.NET</code> <code>Docker</code> <code>GitHub Actions</code></p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" valign="top">
+      <h3>🚗 Prestige Auto</h3>
+      <p>Single Page Application de catalogue automobile en JavaScript natif : routeur maison, filtres, pagination, favoris, avis, chargement différé des images.</p>
+      <p><code>JavaScript</code> <code>Rollup</code> <code>json-server</code></p>
+    </td>
+    <td width="50%" valign="top">
+      <h3>📈 Robot de trading MT5</h3>
+      <p>Projet personnel d'automatisation : un Expert Advisor MetaTrader 5 et des scripts Python pour l'analyse de backtests.</p>
+      <p><code>MQL5</code> <code>Python</code></p>
+    </td>
   </tr>
 </table>
 
-## Outils & Technologies
+## Technologies
 
-<p>
-  <img src="https://skillicons.dev/icons?i=html,css,js,ts,python,java,c,docker,git,github,vscode,linux" alt="HTML, CSS, JavaScript, TypeScript, Python, Java, C, Docker, Git, GitHub, VS Code et Linux" />
-</p>
+**Langages**
 
-> Cette liste évoluera avec mes projets et mes apprentissages.
+<p><img src="https://skillicons.dev/icons?i=py,js,ts,java,c,cs,dart,html,css" alt="Python, JavaScript, TypeScript, Java, C, C#, Dart, HTML, CSS" /></p>
 
-## Me contacter
+**Frameworks**
 
-Je suis disponible pour échanger autour du développement, de l'apprentissage et de projets intéressants.
+<p><img src="https://skillicons.dev/icons?i=flask,django,vue,react,flutter,dotnet,vite" alt="Flask, Django, Vue, React, Flutter, .NET, Vite" /></p>
 
-<p>
-  <a href="mailto:kuracerdem@gmail.com"><img src="https://img.shields.io/badge/kuracerdem%40gmail.com-EA4335?style=flat-square&logo=gmail&logoColor=white" alt="Adresse e-mail" /></a>
-  <a href="https://www.linkedin.com/in/erdem-kurac-22b245388/"><img src="https://img.shields.io/badge/LinkedIn-me_trouver-0A66C2?style=flat-square&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-</p>
+**Bases de données et outils**
 
----
-
-## Statistiques
-
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=A-ErdemK&show_icons=true&hide_border=true&rank_icon=github&locale=fr&title_color=58A6FF&icon_color=F97316&text_color=C9D1D9&bg_color=0D1117" alt="Statistiques GitHub" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=A-ErdemK&layout=compact&hide_border=true&locale=fr&title_color=58A6FF&text_color=C9D1D9&bg_color=0D1117" alt="Langages les plus utilisés" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=A-ErdemK&locale=fr&hide_border=true&background=0D1117&ring=58A6FF&fire=F97316&currStreakLabel=58A6FF&currStreakNum=C9D1D9&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E" alt="Série de contributions GitHub" />
-</p>
+<p><img src="https://skillicons.dev/icons?i=mysql,postgres,sqlite,docker,githubactions,git,linux" alt="MySQL, PostgreSQL, SQLite, Docker, GitHub Actions, Git, Linux" /></p>
 
 ## Activité
 
@@ -78,8 +83,4 @@ Je suis disponible pour échanger autour du développement, de l'apprentissage e
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/A-ErdemK/A-ErdemK/output/github-contribution-grid-snake.svg" />
     <img alt="Animation du serpent sur les contributions GitHub" src="https://raw.githubusercontent.com/A-ErdemK/A-ErdemK/output/github-contribution-grid-snake.svg" />
   </picture>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=A-ErdemK&style=flat-square&color=2F81F7" alt="Nombre de visites du profil" />
 </p>
