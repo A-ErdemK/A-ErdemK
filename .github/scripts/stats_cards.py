@@ -92,13 +92,17 @@ def stats(repos):
     data = graphql("{ viewer { login contributionsCollection { contributionCalendar { totalContributions } } } }")["viewer"]
     login = data["login"]
     depuis = (datetime.now(timezone.utc) - timedelta(days=365)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    ouvertes, revues = compter_pr(repos, login, depuis)
-    return login, [
+    try:
+        ouvertes, revues = compter_pr(repos, login, depuis)
+    except urllib.error.HTTPError:  # le jeton n'a pas le droit « Pull requests : Read-only »
+        ouvertes = revues = None
+    lignes = [
         ("Contributions (12 derniers mois)", data["contributionsCollection"]["contributionCalendar"]["totalContributions"]),
         ("Commits (12 derniers mois)", sum(compter_commits(r, login, depuis) for r in repos)),
         ("Pull requests", ouvertes),
         ("Revues de code", revues),
     ]
+    return login, [(lib, val) for lib, val in lignes if val is not None]
 
 
 def langues(repos):
