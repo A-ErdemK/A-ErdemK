@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="165" viewBox="0 0 400 165">
+<style>.t{font:600 16px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#58A6FF}.l{font:600 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#C9D1D9}.v{font:700 13px 'Segoe UI', Ubuntu, 'Helvetica Neue', Sans-Serif;fill:#C9D1D9;text-anchor:end}</style>
+<rect width="400" height="165" rx="6" fill="#0D1117"/>
+<text x="25" y="34" class="t">Statistiques GitHub de A-ErdemK</text><circle cx="31" cy="92" r="4" fill="#F97316"/><text x="45" y="96" class="l">Contributions (12 derniers mois) :</text><text x="375" y="96" class="v">581</text><circle cx="31" cy="118" r="4" fill="#F97316"/><text x="45" y="122" class="l">Commits (12 derniers mois) :</text><text x="375" y="122" class="v">362</text>
+</svg>
