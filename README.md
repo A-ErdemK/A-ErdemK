@@ -6,7 +6,7 @@
   <p><strong>Étudiant en BUT Informatique, 3e année</strong> · IUT d'Orléans</p>
   <p>
     <a href="https://a-erdemk.github.io"><img src="https://img.shields.io/badge/Portfolio-a--erdemk.github.io-B8F34A?style=for-the-badge&logo=githubpages&logoColor=white&labelColor=111312" alt="Mon portfolio" /></a>
-    <a href="https://www.linkedin.com/in/erdem-kurac-22b245388/"><img src="https://img.shields.io/badge/LinkedIn-Erdem_Kurac-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Profil LinkedIn" /></a>
+    <a href="https://www.linkedin.com/in/erdem-kurac/"><img src="https://img.shields.io/badge/LinkedIn-Erdem_Kurac-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Profil LinkedIn" /></a>
     <a href="mailto:kuracerdem@gmail.com"><img src="https://img.shields.io/badge/Email-me_contacter-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Envoyer un e-mail" /></a>
   </p>
 </div>
